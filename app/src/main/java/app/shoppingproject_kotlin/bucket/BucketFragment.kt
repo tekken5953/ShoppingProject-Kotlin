@@ -1,21 +1,20 @@
-package app.shoppingproject_kotlin.Bucket
+package app.shoppingproject_kotlin.bucket
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import app.shoppingproject_kotlin.MainActivity
 import app.shoppingproject_kotlin.R
+import app.shoppingproject_kotlin.databinding.BucketFragmentBinding
 
 class BucketFragment : Fragment() {
 
     lateinit var mainActivity: MainActivity
-    lateinit var binding : ViewDataBinding
+    lateinit var binding : BucketFragmentBinding
 
     override fun onAttach(context: Context) {
         super.onAttach(context)

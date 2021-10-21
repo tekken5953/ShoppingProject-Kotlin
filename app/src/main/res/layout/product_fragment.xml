@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Product.ProductFragment">
-
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
     <data>
-        <import type="android.view.View"/>
+        <variable
+            name="product_fragment"
+            type="app.shoppingproject_kotlin.product.ProductFragment" />
     </data>
 
     <LinearLayout
@@ -20,26 +17,52 @@
         <TextView
             android:id="@+id/product_frag_title_tv"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:text="App Name"
-            android:textSize="20sp"
-            android:textColor="@color/black"
+            android:layout_height="50dp"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textColor="@color/main_color"
             android:gravity="center"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textAllCaps="false"/>
 
         <com.google.android.material.textfield.MaterialAutoCompleteTextView
             android:id="@+id/product_frag_search_et"
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:hint="검색어를 입력해 주세요"
-            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/search_edit"
+            android:drawableEnd="@drawable/menu_search_icon"
+            android:drawableTint="@color/ripple"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:layout_gravity="center_horizontal"
             android:gravity="start|center"
             android:lines="1"
-            android:background="@drawable/black_outline_box"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="10dp"/>
+            android:textAllCaps="false"
+            android:background="@drawable/black_outline_box" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/gray_bright"
+            android:layout_marginBottom="1dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/product_frag_category_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:scrollbars="none"
+            android:overScrollMode="ifContentScrolls"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/gray_bright"
+            android:layout_marginTop="1dp"/>
 
     </LinearLayout>
 

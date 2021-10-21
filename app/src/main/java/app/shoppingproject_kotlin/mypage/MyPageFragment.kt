@@ -1,4 +1,4 @@
-package app.shoppingproject_kotlin.Search
+package app.shoppingproject_kotlin.mypage
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -11,11 +11,12 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import app.shoppingproject_kotlin.MainActivity
 import app.shoppingproject_kotlin.R
+import app.shoppingproject_kotlin.databinding.MypageFragmentBinding
 
-class SearchFragment : Fragment() {
+class MyPageFragment : Fragment() {
 
     lateinit var mainActivity: MainActivity
-    lateinit var binding : ViewDataBinding
+    lateinit var binding : MypageFragmentBinding
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -27,7 +28,7 @@ class SearchFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.search_fragment, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.mypage_fragment, container, false)
         return binding.root
     }
 

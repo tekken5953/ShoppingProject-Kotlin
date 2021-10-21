@@ -19,16 +19,16 @@
             android:name=".Login.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".Product.PayCompeleteActivity"
+            android:name=".product.PayCompeleteActivity"
             android:exported="true" />
         <activity
-            android:name=".Product.PayActivity"
+            android:name=".product.PayActivity"
             android:exported="true" />
         <activity
-            android:name=".Product.OrderActivity"
+            android:name=".product.OrderActivity"
             android:exported="true" />
         <activity
-            android:name=".Product.DetailActivity"
+            android:name=".product.DetailActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
