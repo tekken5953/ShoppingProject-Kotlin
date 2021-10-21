@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product.ProductFragment">
+
+    <data>
+        <import type="android.view.View"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/product_frag_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_frag_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="App Name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/product_frag_search_et"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:hint="검색어를 입력해 주세요"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:gravity="start|center"
+            android:lines="1"
+            android:background="@drawable/black_outline_box"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</layout>
