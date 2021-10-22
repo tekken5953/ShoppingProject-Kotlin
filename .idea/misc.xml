@@ -5,11 +5,14 @@
       <map>
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/drawable/black_outline_box.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/drawable/category_outline_box.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/drawable/model_product_item_background.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/bucket_fragment.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/detail_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/login_activity.xml" value="0.2046875" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/model_home_category.xml" value="0.33" />
+        <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/model_product_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/model_viewpager2_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/mypage_fragment.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/order_activity.xml" value="0.2046875" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/layout/pay_activity.xml" value="0.36614583333333334" />
