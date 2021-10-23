@@ -1,8 +1,7 @@
-package app.shoppingproject_kotlin.product.adapter
+package app.shoppingproject_kotlin.adapter
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
@@ -15,8 +14,8 @@ class DetailViewPagerAdapter(mList: ArrayList<Drawable>) :
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): DetailViewPagerAdapter.PageViewHolder {
-        TODO("Not yet implemented")
+    ): DetailViewPagerAdapter.PageViewHolder{
+        TODO()
     }
 
     override fun onBindViewHolder(holder: DetailViewPagerAdapter.PageViewHolder, position: Int) {

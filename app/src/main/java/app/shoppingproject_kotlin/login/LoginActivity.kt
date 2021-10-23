@@ -1,4 +1,4 @@
-package app.shoppingproject_kotlin.Login
+package app.shoppingproject_kotlin.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -2,12 +2,6 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <data>
-        <variable
-            name="bucket_fragment"
-            type="app.shoppingproject_kotlin.bucket.BucketFragment" />
-    </data>
-
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

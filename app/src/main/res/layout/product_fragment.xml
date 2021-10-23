@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <data>
-
-        <variable
-            name="product_fragment"
-            type="app.shoppingproject_kotlin.product.ProductFragment" />
-    </data>
-
     <LinearLayout
         android:id="@+id/product_frag_linear_layout"
         android:layout_width="match_parent"
@@ -44,25 +37,25 @@
             android:textColor="@color/black"
             android:textSize="12sp" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.7dp"
-            android:layout_marginBottom="1dp"
-            android:background="@color/gray_bright" />
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/product_frag_category_recyclerView"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal"
             android:overScrollMode="ifContentScrolls"
-            android:scrollbars="none" />
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"/>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.7dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="10dp"
             android:background="@color/gray_bright" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/product_frag_list_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 

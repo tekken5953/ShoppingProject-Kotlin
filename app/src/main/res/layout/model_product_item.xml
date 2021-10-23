@@ -35,7 +35,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/heart_fill"
+        android:src="@drawable/heart_empty"
         app:tint="@color/main_color" />
 
     <TextView

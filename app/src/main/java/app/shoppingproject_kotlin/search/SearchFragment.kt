@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import app.shoppingproject_kotlin.MainActivity
 import app.shoppingproject_kotlin.R
 import app.shoppingproject_kotlin.databinding.SearchFragmentBinding
+import app.shoppingproject_kotlin.product.ProductFragment
 
 class SearchFragment : Fragment() {
 

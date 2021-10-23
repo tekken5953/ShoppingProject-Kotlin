@@ -4,21 +4,25 @@
     <item
         android:id="@+id/menu_home"
         android:title="@null"
+        android:enabled="true"
         android:icon="@drawable/menu_home_icon"/>
 
     <item
         android:id="@+id/menu_search"
         android:title="@null"
+        android:enabled="true"
         android:icon="@drawable/menu_search_icon"/>
 
     <item
         android:id="@+id/menu_store"
         android:title="@null"
+        android:enabled="true"
         android:icon="@drawable/menu_store_icon"/>
 
     <item
         android:id="@+id/menu_mypage"
         android:title="@null"
+        android:enabled="true"
         android:icon="@drawable/menu_mypage_icon"/>
 
 </menu>

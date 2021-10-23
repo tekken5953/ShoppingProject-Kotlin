@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingProjectKotlin">
         <activity
-            android:name=".Login.SplashActivity"
+            android:name=".SampleFragment"
             android:exported="true" />
         <activity
-            android:name=".Login.SignUpActivity"
+            android:name=".login.SplashActivity"
             android:exported="true" />
         <activity
-            android:name=".Login.LoginActivity"
+            android:name=".login.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.LoginActivity"
             android:exported="true" />
         <activity
             android:name=".product.PayCompeleteActivity"

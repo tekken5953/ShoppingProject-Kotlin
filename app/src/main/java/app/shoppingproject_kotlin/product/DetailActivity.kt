@@ -4,11 +4,10 @@ import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import app.shoppingproject_kotlin.R
 import app.shoppingproject_kotlin.databinding.DetailActivityBinding
-import app.shoppingproject_kotlin.product.adapter.DetailViewPagerAdapter
+import app.shoppingproject_kotlin.adapter.DetailViewPagerAdapter
 
 class DetailActivity : AppCompatActivity() {
     lateinit var binding : DetailActivityBinding

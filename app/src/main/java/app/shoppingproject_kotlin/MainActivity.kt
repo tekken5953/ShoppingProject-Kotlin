@@ -1,6 +1,5 @@
 package app.shoppingproject_kotlin
 
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -12,21 +11,21 @@ import app.shoppingproject_kotlin.search.SearchFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    lateinit var bottom_nav : BottomNavigationView
+    lateinit var bottomNav : BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-        bottom_nav = binding.mainBottomNav
-        bottom_nav.selectedItemId = R.id.menu_home
+        bottomNav = binding.mainBottomNav
+        bottomNav.selectedItemId = R.id.menu_home
 
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.main_frame, ProductFragment())
         transaction.addToBackStack("Home")
         transaction.commit()
 
-        bottom_nav.setOnItemSelectedListener { item ->
+        bottomNav.setOnItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.menu_home -> {
                     onClickBottomNav(0)
@@ -49,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
 
     private fun onClickBottomNav(frag : Int) {
         val transaction = supportFragmentManager.beginTransaction()

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import app.shoppingproject_kotlin.MainActivity
 import app.shoppingproject_kotlin.R
 import app.shoppingproject_kotlin.databinding.BucketFragmentBinding
+import app.shoppingproject_kotlin.product.ProductFragment
 
 class BucketFragment : Fragment() {
 
