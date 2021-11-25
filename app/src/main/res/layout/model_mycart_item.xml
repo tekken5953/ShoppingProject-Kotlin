@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <data>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/remove_checkBox"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:buttonTint="@color/side_color"
+            android:visibility="gone"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/icon_cardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="120dp"
+            app:cardElevation="8dp"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/item1"
+                android:layout_centerInParent="true"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/product_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/icon_cardView"
+            android:text="@string/product_name"
+            android:textAllCaps="false"
+            android:textColor="@color/icon_main"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_name_tv"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/icon_cardView"
+            android:text="@string/_120_00_"
+            android:textAllCaps="false"
+            android:textColor="@color/side_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/count_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/minus_cardView"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:padding="2dp"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="30dp"
+                android:backgroundTint="@color/white">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/minus_imageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/minus"
+                    app:tint="@color/side_color" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="1"
+                android:textColor="@color/side_color"
+                android:textSize="17sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/plus_cardView"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:backgroundTint="@color/main_color"
+                android:padding="2dp"
+                app:cardCornerRadius="70dp"
+                app:cardElevation="30dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/plus_imageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/plus"
+                    app:tint="@color/side_color" />
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

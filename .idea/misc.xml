@@ -3,6 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable-v24/back.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable-v24/color_fill_item.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable/category_outline_box.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable/like_fill_24.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable/my_cart_count_background.xml" value="0.35833333333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable/my_cart_recycler_background.xml" value="0.35833333333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable/mycart_recycler_back.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/drawable/search.xml" value="0.38229166666666664" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/bucket_fragment.xml" value="0.33" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/detail_activity.xml" value="0.33" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/item_color_recycler.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/item_size_recycler.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/login_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/model_home_category.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/model_mycart_item.xml" value="0.33" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/model_product_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/model_viewpager2_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/mypage_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/order_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/pay_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/pay_compelete_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/product_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/search_fragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/layout/sign_up_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/AndroidProject/ShoppingProjectKotlin/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/drawable/black_outline_box.xml" value="0.38229166666666664" />
         <entry key="..\:/Users/tekke/AndroidStudioProjects/ShoppingProjectKotlin/app/src/main/res/drawable/category_outline_box.xml" value="0.38229166666666664" />

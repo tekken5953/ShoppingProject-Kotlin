@@ -26,8 +26,7 @@
             app:menu="@menu/bottom_nav_menu"
             app:itemRippleColor="#00FFFFFF"
             app:itemIconSize="25dp"
-            app:labelVisibilityMode="unlabeled" />
-
+            app:labelVisibilityMode="selected" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

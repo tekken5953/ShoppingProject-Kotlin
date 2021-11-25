@@ -7,8 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main_color">#ea6844</color>
+
     <color name="gray_bright">#eaeaea</color>
     <color name="ripple">#A0A0A0</color>
-    <color name="red">@android:color/holo_red_light</color>
+    <color name="main_color">#f0d4e2</color>
+    <color name="side_color">#1c115d</color>
+    <color name="icon_main">#ef5da8</color>
+    <color name="size_item">#F2BECD</color>
+    <color name="red">#F31221</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="bottom_nav_icon">#B9BBC8</color>
 </resources>

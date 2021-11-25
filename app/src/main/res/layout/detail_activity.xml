@@ -1,244 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-        <variable
-            name="detailDao"
-            type="app.shoppingproject_kotlin.model.DetailDao" />
-    </data>
-
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/root_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ScrollView
+        <RelativeLayout
+            android:id="@+id/image_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/detail_heart_iv">
+            android:layout_height="415dp"
+            android:background="@drawable/back1">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/product_cardView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:padding="2dp"
+                app:cardCornerRadius="120dp"
+                app:cardElevation="8dp">
 
-                <TextView
-                    android:id="@+id/detail_topbar_tx"
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/product_imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:gravity="center_vertical|start"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp"
-                    android:text="주문"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/item1"
+                    android:layout_gravity="center"/>
+            </com.google.android.material.card.MaterialCardView>
 
-                <androidx.viewpager2.widget.ViewPager2
-                    android:id="@+id/detail_ViewPager"
-                    android:layout_width="match_parent"
-                    android:layout_height="280dp" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="35dp"
+                android:tint="@color/side_color"
+                app:srcCompat="@drawable/back" />
 
-                <TextView
-                    android:id="@+id/detail_pname_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="25dp"
-                    android:maxEms="13"
-                    android:text="@{detailDao.p_name}"
-                    android:textColor="@color/black"
-                    android:textSize="21sp"
-                    android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/likeButton"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/like_back"
+                android:shadowColor="?android:attr/shadowColor"
+                android:shadowDy="5"
+                app:srcCompat="@drawable/like_fill_24" />
 
-                <TextView
-                    android:id="@+id/detail_pindex_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="5dp"
-                    android:text="@{detailDao.p_index}"
-                    android:textSize="12sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/detail_pname_tv" />
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/detail_discount_tv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@{detailDao.p_discount}"
-                        android:textColor="@color/red"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="2dp"
-                        android:text="%"
-                        android:textColor="@color/red" />
-
-                    <TextView
-                        android:id="@+id/detail_pprice_tv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:text="aa,aaa"
-                        android:textColor="@color/black"
-                        android:textSize="19sp" />
-
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="2dp"
-                        android:text="원"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:text="@{detailDao.p_price}" />
-
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="2dp"
-                        android:text="원" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="재고 수량  :  "
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:text="@{detailDao.p_stock}"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:id="@+id/textView20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="2dp"
-                        android:text="개"
-                        android:textColor="@color/black" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="등록일자  :  "
-                        android:textSize="13sp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:text="@{detailDao.p_update}"
-                        android:textSize="13sp" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.33"
-                        android:gravity="center"
-                        android:text="상세정보"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.33"
-                        android:gravity="center"
-                        android:text="리뷰"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.33"
-                        android:gravity="center"
-                        android:text="Q&amp;A"
-                        android:textColor="@color/black" />
-
-                </TableRow>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.7dp"
-                    android:layout_marginBottom="2dp"
-                    android:background="@color/gray_bright" />
-
-                <androidx.viewpager2.widget.ViewPager2
-                    android:layout_width="match_parent"
-                    android:layout_height="500dp" />
-
-            </LinearLayout>
-        </ScrollView>
-
-        <ImageView
-            android:id="@+id/detail_heart_iv"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:layout_alignParentBottom="true"
-            android:padding="10dp"
-            android:src="@drawable/heart_empty"
-            app:tint="@color/main_color" />
+        </RelativeLayout>
 
         <TextView
+            android:id="@+id/product_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/product_name"
+            android:textAllCaps="false"
+            android:textColor="@color/side_color"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_description_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/product_description"
+            android:textAllCaps="false" />
+
+        <TableRow
+            android:id="@+id/size_tableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/size"
+                android:textAllCaps="false"
+                android:textColor="@color/side_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_size_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_size_recycler" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/color_tableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/color_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/available_color"
+                android:textAllCaps="false"
+                android:textColor="@color/side_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_color_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="6"
+                tools:listitem="@layout/item_color_recycler" />
+
+        </TableRow>
+
+        <View
+            android:id="@+id/view1"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_alignParentBottom="true"
-            android:layout_toEndOf="@+id/detail_heart_iv"
-            android:background="@color/main_color"
-            android:gravity="center"
-            android:text="장바구니"
-            android:textColor="@color/white"
-            android:textSize="19sp" />
-    </RelativeLayout>
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/total_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_120_00"
+                android:textColor="@color/side_color"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:background="@color/side_color"
+                android:drawableStart="@drawable/addtocart_img"
+                android:layout_marginStart="100dp"
+                android:gravity="center"
+                android:paddingStart="7dp"
+                android:paddingEnd="0dp"
+                android:text="@string/add_to_cart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </layout>

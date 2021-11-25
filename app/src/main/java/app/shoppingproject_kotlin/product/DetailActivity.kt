@@ -1,13 +1,13 @@
 package app.shoppingproject_kotlin.product
 
 import android.graphics.drawable.Drawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
 import app.shoppingproject_kotlin.R
-import app.shoppingproject_kotlin.databinding.DetailActivityBinding
 import app.shoppingproject_kotlin.adapter.DetailViewPagerAdapter
+import app.shoppingproject_kotlin.databinding.DetailActivityBinding
 
 class DetailActivity : AppCompatActivity() {
     lateinit var binding : DetailActivityBinding

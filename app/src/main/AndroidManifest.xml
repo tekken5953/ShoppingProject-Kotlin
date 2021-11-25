@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShoppingProjectKotlin">
         <activity
-            android:name=".SampleFragment"
-            android:exported="true" />
-        <activity
             android:name=".login.SplashActivity"
             android:exported="true" />
         <activity
